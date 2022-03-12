@@ -29,13 +29,13 @@ namespace stringanalizer {
                     check = true;
                     break;
                 }
-                else {
-                    temp += mainstr[i];
-                }
             }
             if(check) {
                 iterator++;
                 break;
+            }
+            else {
+                temp += mainstr[i];
             }
             iterator++;
         }

@@ -10,7 +10,7 @@ int main() {
     analizer.addseparator('!');
     cout << analizer.nextsubstring() << endl;
     cout << analizer.analizationend() << endl;
-    analizer.delallsep();
+   // analizer.delallsep();
     cout << analizer.nextsubstring() << endl;
     cout << analizer.nextsubstring() << endl;
     return 0;

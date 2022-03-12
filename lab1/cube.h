@@ -4,28 +4,18 @@
 
 #pragma once
 
-
+#include <complex>
 using namespace std;
 namespace cube {
     void adder1(int& firstnum, int& secondnum);
-    void adder2(int firstnum, int secondnum);
-    void cuter1(double& num);
-    void cuter2(double num);
-    class cube {
-    private:
-        int xcenter;
-        int ycenter;
-        int sidesize;
-    public:
-        cube(int x, int y, int side);
-        void vectormove(int x, int y);
-
-        void lefttopdotcord();
-
-        void righttopcord();
-
-        void leftbottomcoord();
-
-        void rightbottomdot();
+    void adder2(int* firstnum, int* secondnum);
+    void cuter1(float& num);
+    void cuter2(float* num);
+    void complexchange1(complex<int>* z);
+    void complexchange2(complex<int>& z);
+    struct square {
+        int x_c = 0, y_c = 0;
     };
+    void squaremove1(struct square& sqr, int x, int y);
+    void squaremove2(struct square*, int x, int y);
 }

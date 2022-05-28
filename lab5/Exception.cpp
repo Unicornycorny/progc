@@ -1,7 +1,3 @@
-//
-// Created by Egor on 06.05.2022.
-//
-
 #include "Exception.h"
 #include <string>
 

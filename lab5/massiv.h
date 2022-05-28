@@ -1,7 +1,3 @@
-//
-// Created by Egor on 06.05.2022.
-//
-
 #ifndef LAB5_MASSIV_H
 #define LAB5_MASSIV_H
 #include "Exception.h"

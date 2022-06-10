@@ -2,40 +2,35 @@
 #include<conio.h>
 #include<stdlib.h>
 
-int main()
+int main(int arg,char *arr[])
 {
     FILE *f1,*f2,*f3;
     char ch;
-    int n1, n2, n3;
-    char x;
-    scanf("%d", &n1);
-    scanf("%d", &n2);
-    scanf("%d", &n3);
-    char str1[n1 + 1];
-    char str2[n2 + 1];
-    char str3[n3 + 1];
 
-    scanf("%s", str1);
-    scanf("%s", str2);
-    scanf("%s", str3);
+    if(arg!=4)
+    {
+        printf("Argument Missing ! Press key to exit.");
+        getchar();
+        exit(0);
+    }
 
-    f1 = fopen(str1,"r");
+    f1 = fopen(arr[1],"r");
     if(f1==NULL)
     {
-        printf("Cannot open source file 1! Press key to exit.");
+        printf("Cannot open source file ! Press key to exit.");
         getchar();
         exit(0);
     }
 
-    f2 = fopen(str2,"r");
+    f2 = fopen(arr[2],"r");
     if(f2==NULL)
     {
-        printf("Cannot open source file 2! Press key to exit.");
+        printf("Cannot open source file ! Press key to exit.");
         getchar();
         exit(0);
     }
 
-    f3 = fopen(str3,"w");
+    f3 = fopen(arr[3],"w");
     if(f3==NULL)
     {
         printf("Cannot copy file ! Press key to exit.");
@@ -61,6 +56,7 @@ int main()
         else
             putc(ch,f3);
     }
+
 
     printf("File copied succesfully!");
     fclose(f1);

@@ -12,7 +12,7 @@ int main()
     printf("\n%x %x", a, ~a);
 
     scanf("\n%x", &b);
-    printf("%x", (a || b));
+    printf("%x", (a | b));
 
     return 0;
 }
